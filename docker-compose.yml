@@ -1,0 +1,15 @@
+version: "3.7"
+
+# Service Definitions
+services:
+  # CFML Engine
+  cfml:
+    image: ortussolutions/commandbox:4.6.0
+    ports:
+     - "8080:8080"
+    volumes:
+     - ./www:/app
+    environment:
+      PORT: 8080
+      SSL_PORT: 8443
+      cfconfig_inspectTemplate: always

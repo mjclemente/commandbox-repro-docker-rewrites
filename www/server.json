@@ -1,0 +1,27 @@
+{
+  "name": "test-rewrites",
+  "debug": true,
+  "app": {
+    "cfengine": "lucee@5.3.1+102",
+    "sessionCookieSecure": true,
+    "sessionCookieHTTPOnly": true
+  },
+
+  "web": {
+    "directoryBrowsing": false,
+    "welcomeFiles": "index.cfm",
+    "errorPages": {
+      "404": "404.cfm"
+    },
+    "http": {
+      "port": 8080
+    },
+    "SSL": {
+      "enable": true,
+      "port": 8443
+    },
+    "rewrites": {
+      "enable": true
+    }
+  }
+}
